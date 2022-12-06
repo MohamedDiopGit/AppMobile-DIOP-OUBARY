@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity(), CarteFragment.OnFragmentInteractionLis
 
     //on utilise Fuel pour récuperer les données
     fun getBDD() {
-        val myurl: String = "https://www.data.gouv.fr/s/resources/monuments-et-tombes-de-personnalites-du-cimetiere-du-pere-lachaise/20141103-215847/perelachaise_data.json"
+        val myurl: String = "bookshelfmdp.cleverapps.io/books"
         Fuel.get(myurl).responseString { request, response, result ->
             //do something with response
             result.fold({ d ->
