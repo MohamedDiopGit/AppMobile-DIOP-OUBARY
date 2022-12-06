@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity(), CarteFragment.OnFragmentInteractionLis
 
     //on utilise Fuel pour récuperer les données
     fun getBDD() {
-        val myurl: String = "bookshelfmdp.cleverapps.io/books"
+        val myurl: String = "https://bookshelfmdp.cleverapps.io/books"
         Fuel.get(myurl).responseString { request, response, result ->
             //do something with response
             result.fold({ d ->
