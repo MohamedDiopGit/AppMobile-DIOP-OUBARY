@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/myimageToTEST"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/antoine"
+                />
+
+            <TextView
+                android:id="@+id/textADisplay"
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:text="\n\nInfo générales de l'application :\n\n   -URL des données : https://www.data.gouv.fr/fr/datasets/r/c1085ea9-9c6c-4b54-befc-30ffbc2d7413\n\n   -Cette application utilise un jeu de données sur la liste des monuments et tombes remarquables pouvant être trouvé au cimetière du Père-Lachaise à Paris; ces données s'accompaCette application utilise un jeu de données sur la liste des monuments et tombes remarquables pouvant être trouvé au cimetière du Père-Lachaise à Paris; ces données s'accompagnent également d'informations basiques tirées de Wikipédia.\n\n   -Librairies utilisées :\n    Picasso : Affichage d'images\n  Map : Utilisation de Google Map\n CloudClever : Lecture des données\n    Map : Utilisation de Google Map\n\n   -Licence : libre\n\n" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

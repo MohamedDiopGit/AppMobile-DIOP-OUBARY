@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+    <ImageView
+        android:id="@+id/imageClick"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewADisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titleClick"
+        android:layout_width="238dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/imageClick"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clickADisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:text="Veuillez cliquer pour plus d'infos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/imageClick"
+        app:layout_constraintTop_toBottomOf="@+id/titleClick" />
+
+    <View
+        android:id="@+id/viewADisplay"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginStart="155dp"
+        android:layout_marginEnd="155dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
