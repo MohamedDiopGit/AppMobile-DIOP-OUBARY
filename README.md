@@ -20,3 +20,5 @@ L'application récupère les données du dataset, et permet de les afficher dans
 Le premier onglet donne accès à la liste des monuments, et d'accéder aux informations sur les personnalités dans ces monuments.
 Le second onglet affiche les postions sur une carte.
 Le dernier onglet permet de consulter les informations de notres application.
+
+Les données de notre API CleverCloud sont accessibles via : https://bookshelfmdp.cleverapps.io/monuments
